@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { ButtonSize } from './Button';
 
 export default {
-	title: 'Кнопка',
+	title: 'Button',
 	component: Button,
 	// More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 	argTypes: {
