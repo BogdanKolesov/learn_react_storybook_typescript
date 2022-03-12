@@ -1,9 +1,10 @@
 import React from 'react';
 import Button from '.';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ButtonSize } from './Button';
 
 export default {
-	title: 'Button',
+	title: 'Кнопка',
 	component: Button,
 	// More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 	argTypes: {
@@ -17,22 +18,28 @@ export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
 	primary: true,
-	label: 'Button',
+	label: 'Кнопка',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-	label: 'Button',
+	label: 'Кнопка',
 };
 
 export const Large = Template.bind({});
 Large.args = {
-	size: 'large',
-	label: 'Button',
+	size: ButtonSize.large,
+	label: 'Кнопка очень большая',
 };
 
 export const Small = Template.bind({});
 Small.args = {
-	size: 'small',
-	label: 'Button',
+	size: ButtonSize.small,
+	label: 'Кнопка',
+};
+
+export const Bold = Template.bind({});
+Bold.args = {
+	bold: true,
+	label: 'Кнопка',
 };
