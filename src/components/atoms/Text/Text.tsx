@@ -15,10 +15,10 @@ export enum TextVariant {
 interface TextProps {
 	variant?: TextVariant;
 	color?: string;
-	label: string;
 	primary?: boolean;
-	bold: boolean;
-	italic: boolean;
+	bold?: boolean;
+	italic?: boolean;
+	label: string;
 }
 
 const Text: FC<TextProps> = ({

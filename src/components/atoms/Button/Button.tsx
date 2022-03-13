@@ -12,7 +12,7 @@ interface ButtonProps {
 	backgroundColor?: string;
 	size?: ButtonSize;
 	label: string;
-	bold: boolean;
+	bold?: boolean;
 	onClick?: () => void;
 }
 
